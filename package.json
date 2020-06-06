@@ -4,7 +4,7 @@
   "description": "Card shoe with HTML, CSS and JavaScript.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp"
   },
   "author": "AndresParraGO",
   "license": "MIT",
