@@ -1,5 +1,5 @@
 # 🎆 Card Shoe
-Card shoe with HTML, CSS and JavaScript.
+Card shoe with HTML, CSS and JavaScript. (It is not finished)
 
 ## 🚀 Start
 
