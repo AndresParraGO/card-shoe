@@ -1,0 +1,32 @@
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $bgBody;
+	font-family: 'Rubik', sans-serif;
+	color: $secondTextColor;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+
+.title {
+	color: $textColor;	
+}

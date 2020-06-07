@@ -1,0 +1,162 @@
+
+
+.wrapper {
+	margin-top: 5em;
+	margin-bottom: 5em;
+	margin-left: auto;
+	margin-right: auto;
+
+	width: 80%;
+	max-width: 960px;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	background-color: $bgColor;
+	width: 80%;
+	box-shadow: 0 0 10px 0 $colorShadow;
+}
+
+
+// CARD IMG
+
+.card__img {
+	background-color: $colorBlue;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5em 0;
+}
+
+.card__img--img {
+	width: 80%;
+	transform: rotate(-10deg)
+}
+
+
+// CARD CONTENT
+
+.card__content {
+	padding: 1em;
+}
+
+.card__divider {
+	padding:1em 0;
+	border-bottom: 1px solid $colorShadow;
+}
+
+.card__divider:nth-child(5) {
+	border-bottom: none;
+}
+
+
+// COLORS
+
+.card__content--colors {
+	display: flex;
+
+	div {
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		margin-right: .5em;
+		margin-top: .5em;
+		cursor: pointer;
+	}
+
+	.blue {background-color: $colorBlue;}
+	.red {background-color: $colorRed;}
+	.white {background-color: $colorWhite;}
+	.black {background-color: $colorBlack}
+	.blue2 {background-color: $colorBlue2;}
+}
+
+
+// SIZES
+
+.card__content--sizes {
+	display: flex;
+
+	div {
+		border-radius: 5px;
+		padding: .3em .7em;
+		margin-right: .5em;
+		margin-top: .5em;
+		color: $textColor;
+		cursor: pointer;
+
+		background-color: $colorShadow;
+	}
+}
+
+
+
+
+// FOOTER
+
+
+.card footer {
+	display: flex;
+	justify-content: space-between;
+
+
+	.btn {
+		line-height: 30px;
+		background-color: $colorBlue;
+		padding: 0 3em;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: .9em;
+	}
+
+	.card__content--price {
+		font-size: 1.5em;
+		font-weight: 700;
+	}
+}
+
+
+
+@media screen and (min-width:960px) {
+
+	.wrapper {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.card {
+		display: flex;
+	}
+
+	.card__img {
+		border-radius: 5px;
+		width: 50%;
+		box-shadow: -10px 10px 20px $colorShadow,
+					-10px -10px 20px $colorShadow;
+	}
+
+	.card__img--img {
+		width: 100%;
+		position: absolute;
+		left: -4em;
+		bottom: 4em;
+		transform: rotate(-20deg);
+	}
+
+	.card__content {
+		border-radius: 5px;
+		padding: 2em;
+
+		background-color: $bgColor;
+		box-shadow: 10px 10px 20px $colorShadow,
+					10px -10px 20px $colorShadow;
+		width: 50%;
+		transform: scale(1.2);
+	}
+
+}
