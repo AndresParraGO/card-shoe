@@ -8,9 +8,9 @@
 }
 
 body {
-	background-color: $bgBody;
+	background-color: var(--bgBody);
 	font-family: 'Rubik', sans-serif;
-	color: $secondTextColor;
+	color: var(--secondTextColor);
 }
 
 a {
@@ -28,5 +28,5 @@ img {
 
 
 .title {
-	color: $textColor;	
+	color: var(--textColor);	
 }

@@ -1,14 +1,13 @@
 
 
 .wrapper {
-	margin-top: 5em;
-	margin-bottom: 5em;
-	margin-left: auto;
-	margin-right: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left: 1em;
+	margin-right: 1em;
 
-	width: 80%;
 	max-width: 960px;
-	height: 100vh;
+	min-height: 100vh;
 
 	display: flex;
 	justify-content: center;
@@ -16,16 +15,18 @@
 }
 
 .card {
-	background-color: $bgColor;
-	width: 80%;
-	box-shadow: 0 0 10px 0 $colorShadow;
+	background-color: var(--bgColor);
+	box-shadow: 0 0 10px 0 var(--colorShadow);
+
+	--color: var(--colorBlue);
+	--colorDark: rgba(0, 0,0 , .7);
 }
 
 
 // CARD IMG
 
 .card__img {
-	background-color: $colorBlue;
+	background-image: linear-gradient(to right, var(--color), var(--colorDark));
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -35,7 +36,7 @@
 
 .card__img--img {
 	width: 80%;
-	transform: rotate(-10deg)
+	transform: rotate(-10deg);
 }
 
 
@@ -43,11 +44,12 @@
 
 .card__content {
 	padding: 1em;
+	font-size: .9em;
 }
 
 .card__divider {
 	padding:1em 0;
-	border-bottom: 1px solid $colorShadow;
+	border-bottom: 1px solid var(--colorShadow);
 }
 
 .card__divider:nth-child(5) {
@@ -69,11 +71,11 @@
 		cursor: pointer;
 	}
 
-	.blue {background-color: $colorBlue;}
-	.red {background-color: $colorRed;}
-	.white {background-color: $colorWhite;}
-	.black {background-color: $colorBlack}
-	.blue2 {background-color: $colorBlue2;}
+	.blue {background-color: var(--colorBlue);}
+	.red {background-color: var(--colorRed);}
+	.white {background-color: var(--colorWhite);}
+	.black {background-color: var(--colorBlack)}
+	.blue2 {background-color: var(--colorBlue2);}
 }
 
 
@@ -87,10 +89,10 @@
 		padding: .3em .7em;
 		margin-right: .5em;
 		margin-top: .5em;
-		color: $textColor;
+		color: var(--textColor);
 		cursor: pointer;
 
-		background-color: $colorShadow;
+		background-color: var(--colorShadow);
 	}
 }
 
@@ -107,7 +109,7 @@
 
 	.btn {
 		line-height: 30px;
-		background-color: $colorBlue;
+		background-color: var(--color);
 		padding: 0 3em;
 		color: #fff;
 		text-transform: uppercase;
@@ -125,8 +127,7 @@
 @media screen and (min-width:960px) {
 
 	.wrapper {
-		margin-top: 0;
-		margin-bottom: 0;
+		margin: 0 auto;
 	}
 
 	.card {
@@ -136,8 +137,8 @@
 	.card__img {
 		border-radius: 5px;
 		width: 50%;
-		box-shadow: -10px 10px 20px $colorShadow,
-					-10px -10px 20px $colorShadow;
+		box-shadow: -10px 10px 20px var(--colorShadow),
+					-10px -10px 20px var(--colorShadow);
 	}
 
 	.card__img--img {
@@ -152,11 +153,36 @@
 		border-radius: 5px;
 		padding: 2em;
 
-		background-color: $bgColor;
-		box-shadow: 10px 10px 20px $colorShadow,
-					10px -10px 20px $colorShadow;
+		background-color: var(--bgColor);
+		box-shadow: 10px 10px 20px var(--colorShadow),
+					10px -10px 20px var(--colorShadow);
 		width: 50%;
 		transform: scale(1.2);
 	}
 
+}
+
+
+
+
+// COLORS
+
+.color-red {
+	--color: var(--colorRed);
+}
+
+.color-blue {
+	--color: var(--colorBlue);
+}
+
+.color-white {
+	--color: var(--colorWhite);
+}
+
+.color-black {
+	--color: var(--colorBlack);
+}
+
+.color-blue2 {
+	--color: var(--colorBlue2);
 }
