@@ -16,17 +16,14 @@
 
 .card {
 	background-color: var(--bgColor);
-	box-shadow: 0 0 10px 0 var(--colorShadow);
-
-	--color: var(--colorBlue);
-	--colorDark: rgba(0, 0,0 , .7);
+	box-shadow: 0 0 5px 0 var(--colorShadow);
 }
 
 
 // CARD IMG
 
 .card__img {
-	background-image: linear-gradient(to right, var(--color), var(--colorDark));
+	background-image: linear-gradient(to left, var(--colorBlue), darken(#466DBD, 30%));
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -109,7 +106,7 @@
 
 	.btn {
 		line-height: 30px;
-		background-color: var(--color);
+		background-color: var(--colorBlue);
 		padding: 0 3em;
 		color: #fff;
 		text-transform: uppercase;
@@ -137,8 +134,8 @@
 	.card__img {
 		border-radius: 5px;
 		width: 50%;
-		box-shadow: -10px 10px 20px var(--colorShadow),
-					-10px -10px 20px var(--colorShadow);
+		box-shadow: -5px 5px 10px var(--colorShadow),
+					-5px -5px 10px var(--colorShadow);
 	}
 
 	.card__img--img {
@@ -154,8 +151,8 @@
 		padding: 2em;
 
 		background-color: var(--bgColor);
-		box-shadow: 10px 10px 20px var(--colorShadow),
-					10px -10px 20px var(--colorShadow);
+		box-shadow: 5px 5px 10px var(--colorShadow),
+					5px -5px 10px var(--colorShadow);
 		width: 50%;
 		transform: scale(1.2);
 	}
@@ -168,21 +165,21 @@
 // COLORS
 
 .color-red {
-	--color: var(--colorRed);
+	background-image: linear-gradient(to left, var(--colorRed), darken(#8F0A1E, 20%));
 }
 
 .color-blue {
-	--color: var(--colorBlue);
+	background-image: linear-gradient(to left, var(--colorBlue), darken(#466DBD, 20%));
 }
 
 .color-white {
-	--color: var(--colorWhite);
+	background-image: linear-gradient(to left, var(--colorWhite), darken(#EAEBF0, 20%));
 }
 
 .color-black {
-	--color: var(--colorBlack);
+	background-image: linear-gradient(to left, var(--colorBlack), darken(#1E1E20, 20%));
 }
 
 .color-blue2 {
-	--color: var(--colorBlue2);
+	background-image: linear-gradient(to left, var(--colorBlue2), darken(#5274A0, 20%));
 }

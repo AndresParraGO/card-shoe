@@ -9,7 +9,7 @@
   --secondTextColor: #464646;
   --bgColor: #fff;
   --bgBody: #EEEEEE;
-  --colorShadow: #ccc; }
+  --colorShadow: #dedede; }
 
 *,
 *::after,
@@ -49,12 +49,10 @@ img {
 
 .card {
   background-color: var(--bgColor);
-  box-shadow: 0 0 10px 0 var(--colorShadow);
-  --color: var(--colorBlue);
-  --colorDark: rgba(0, 0,0 , .7); }
+  box-shadow: 0 0 5px 0 var(--colorShadow); }
 
 .card__img {
-  background-image: linear-gradient(to right, var(--color), var(--colorDark));
+  background-image: linear-gradient(to left, var(--colorBlue), #1c2c4e);
   position: relative;
   display: flex;
   justify-content: center;
@@ -112,7 +110,7 @@ img {
   justify-content: space-between; }
   .card footer .btn {
     line-height: 30px;
-    background-color: var(--color);
+    background-color: var(--colorBlue);
     padding: 0 3em;
     color: #fff;
     text-transform: uppercase;
@@ -129,7 +127,7 @@ img {
   .card__img {
     border-radius: 5px;
     width: 50%;
-    box-shadow: -10px 10px 20px var(--colorShadow), -10px -10px 20px var(--colorShadow); }
+    box-shadow: -5px 5px 10px var(--colorShadow), -5px -5px 10px var(--colorShadow); }
   .card__img--img {
     width: 100%;
     position: absolute;
@@ -140,21 +138,21 @@ img {
     border-radius: 5px;
     padding: 2em;
     background-color: var(--bgColor);
-    box-shadow: 10px 10px 20px var(--colorShadow), 10px -10px 20px var(--colorShadow);
+    box-shadow: 5px 5px 10px var(--colorShadow), 5px -5px 10px var(--colorShadow);
     width: 50%;
     transform: scale(1.2); } }
 
 .color-red {
-  --color: var(--colorRed); }
+  background-image: linear-gradient(to left, var(--colorRed), #30030a); }
 
 .color-blue {
-  --color: var(--colorBlue); }
+  background-image: linear-gradient(to left, var(--colorBlue), #294274); }
 
 .color-white {
-  --color: var(--colorWhite); }
+  background-image: linear-gradient(to left, var(--colorWhite), #afb2c6); }
 
 .color-black {
-  --color: var(--colorBlack); }
+  background-image: linear-gradient(to left, var(--colorBlack), black); }
 
 .color-blue2 {
-  --color: var(--colorBlue2); }
+  background-image: linear-gradient(to left, var(--colorBlue2), #2f435d); }
